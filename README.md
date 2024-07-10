@@ -27,3 +27,28 @@ Em ambas as situações, o código resultante no commit de merge refletirá as a
 Se houver conflitos, o Git indicará os conflitos e você precisará resolvê-los manualmente antes de finalizar o merge. Após resolver os conflitos, você faz um commit de merge para finalizar o processo.
 
 Em resumo, o merge combina as alterações de ambas as branches, seja através de um fast-forward ou de um merge de três vias. O código resultante contém todas as alterações das branches envolvidas no merge.
+
+Para realizar o merge da branch inclusao_frete com a branch master e atualizar o repositório remoto, você pode seguir os passos abaixo:
+
+1. Mude para a branch master:
+bash
+Copiar código
+git checkout master
+2. Faça o merge da branch inclusao_frete:
+bash
+Copiar código
+git merge inclusao_frete
+Se houver conflitos, o Git indicará. Nesse caso, você precisará resolver os conflitos antes de continuar. Após resolver os conflitos, prossiga com o próximo passo.
+
+3. Atualize o repositório remoto:
+bash
+Copiar código
+git push origin master
+Este comando enviará as alterações feitas no merge para o repositório remoto.
+
+Nota:
+Se você encontrar conflitos durante o merge, o Git indicará os arquivos com conflitos. Você precisará resolvê-los manualmente e, em seguida, continuar o processo de merge com git add e git merge --continue.
+
+Certifique-se de que a branch master no repositório remoto está atualizada antes de fazer o push. Se alguém mais fez alterações na branch master remotamente, você pode precisar realizar um git pull antes de fazer o push.
+
+Esses passos garantirão que a branch master local seja mesclada com a branch inclusao_frete e que as alterações sejam atualizadas no repositório remoto.
