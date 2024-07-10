@@ -32,18 +32,18 @@ Para realizar o merge da branch inclusao_frete com a branch master e atualizar o
 
 1. Mude para a branch master:
 bash
-Copiar código
-git checkout master
+
+```git checkout master```
 2. Faça o merge da branch inclusao_frete:
 bash
-Copiar código
-git merge inclusao_frete
+
+```git merge inclusao_frete```
 Se houver conflitos, o Git indicará. Nesse caso, você precisará resolver os conflitos antes de continuar. Após resolver os conflitos, prossiga com o próximo passo.
 
 3. Atualize o repositório remoto:
 bash
-Copiar código
-git push origin master
+
+```git push origin master```
 Este comando enviará as alterações feitas no merge para o repositório remoto.
 
 Nota:
