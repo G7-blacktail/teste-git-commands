@@ -6,6 +6,8 @@ public class UsuarioRepresentation {
 
     private String nome;
 
+    private Integer idade;
+
     public String getIdUsuario() {
         return this.idUsuario;
     }
@@ -20,5 +22,13 @@ public class UsuarioRepresentation {
 
     public void setNome(final String nome) {
         this.nome = nome;
+    }
+
+    public Integer getIdade() {
+        return this.idade;
+    }
+
+    public void setIdade(final Integer idade) {
+        this.idade = idade;
     }
 }
