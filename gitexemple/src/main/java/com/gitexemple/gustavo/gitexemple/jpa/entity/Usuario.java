@@ -15,6 +15,9 @@ public class Usuario {
     @Column(name = "nm_usuario")
     private String nome;
 
+    @Column(name = "nr_idade")
+    private Integer idade;
+
     public String getIdUsuario() {
         return this.idUsuario;
     }
@@ -29,5 +32,13 @@ public class Usuario {
 
     public void setNome(final String nome) {
         this.nome = nome;
+    }
+
+    public Integer getIdade() {
+        return this.idade;
+    }
+
+    public void setIdade(final Integer idade){
+        this.idade = idade;
     }
 }

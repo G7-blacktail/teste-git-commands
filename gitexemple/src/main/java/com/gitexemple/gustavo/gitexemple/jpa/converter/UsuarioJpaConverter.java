@@ -19,6 +19,7 @@ public class UsuarioJpaConverter extends AbstractConverter<Usuario, UsuarioRepre
         UsuarioRepresentation rep = new UsuarioRepresentation();
         rep.setIdUsuario(obj.getIdUsuario());
         rep.setNome(obj.getNome());
+        rep.setIdade(obj.getIdade());
 
         return rep;
     }
@@ -31,6 +32,7 @@ public class UsuarioJpaConverter extends AbstractConverter<Usuario, UsuarioRepre
 
         obj.setIdUSuario(rep.getIdUsuario());
         obj.setNome(rep.getNome());
+        obj.setIdade(rep.getIdade());
 
         return obj;
     }
